@@ -1,5 +1,6 @@
 require("dotenv").config();
 module.exports = {
-  redisPort: process.env.REDIS,
+  redisHost: process.env.REDIS_HOST,
+  redisPort: process.env.REDIS_PORT,
   apiUrl: process.env.API,
 };

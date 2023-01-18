@@ -1,7 +1,10 @@
 const { createClient } = require("redis");
-const { redisPort } = require("../config");
+const { redisPort, redisHost } = require("../config");
 
-const client = createClient();
+const client = createClient({
+  host: redisHost,
+  port: redisPort,
+});
 
 (async () => {
   await client.connect();
