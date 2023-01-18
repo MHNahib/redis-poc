@@ -1,4 +1,5 @@
 const express = require("express");
+const { client } = require("./src/service/redis");
 const { getAllPosts } = require("./src/routes");
 
 const app = express();
